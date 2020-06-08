@@ -11,7 +11,6 @@ function saveName(name) {
 
 function paintGreeting(text) {
   //console.log(`${text}`);
-  console.log(text);
   form.classList.remove(SHOWING_ON);
   greeting.classList.add(SHOWING_ON);
   greeting.innerHTML = `Hello ${text}`;
