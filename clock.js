@@ -3,14 +3,14 @@ const clockTitle = clockContainer.querySelector("h1");
 
 function getTime() {
   const date = new Date();
-  const minutes = date.getMinutes();
   const hours = date.getHours();
+  const minutes = date.getMinutes();
   const seconds = date.getSeconds();
-  clockTitle.innerText = `${hours}:${minutes}:${seconds}`;
+
+  clockTitle.innerHTML = `${hours}:${minutes}:${seconds}`;
 }
 
 function init() {
-  console.log("hi");
+  getTime();
 }
-
 init();
