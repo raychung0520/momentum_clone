@@ -24,10 +24,10 @@ function saveToDos() {
 function paintToDo(text) {
   const li = document.createElement("li");
   const delBtn = document.createElement("button");
-
+  delBtn.innerText = "🆇";
   const span = document.createElement("span");
   const newId = toDos.length + 1;
-  delBtn.innerText = "🆇";
+
   delBtn.addEventListener("click", deleteToDo);
   span.innerText = text;
   li.appendChild(span);
